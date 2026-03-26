@@ -1,50 +1,83 @@
-# Welcome to your Expo app 👋
+# PetCare – Gestor de Mascotas
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> ⚠️ **Nota:** El proyecto fue desarrollado con Expo en lugar de React Native CLI puro, debido a incompatibilidades técnicas con Android Studio en los equipos utilizados durante el desarrollo.
 
-## Get started
+---
 
-1. Install dependencies
+## Integrantes
 
-   ```bash
-   npm install
-   ```
+- Jhon Montoya Tejada
+- Luis Angel Arquez Larios
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## Descripcion del Proyecto
 
-In the output, you'll find options to open the app in a
+PetCare es una aplicacion movil para la gestión de mascotas. Permite registrar nuevas mascotas mediante un formulario de multiples campos, visualizar el listado de mascotas registradas, consultar el detalle de cada una y acceder a una pantalla de consejos de cuidado.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Tecnologías Utilizadas
 
-## Get a fresh project
+- [React Native](https://reactnative.dev/) con [Expo](https://expo.dev/)
+- [React Navigation](https://reactnavigation.org/) – Stack Navigator + Bottom Tab Navigator.
+- [Expo Go](https://expo.dev/client) para pruebas en dispositivo físico
 
-When you're ready, run:
+---
+
+## Requisitos Previos
+
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
+
+- [Node.js 18+](https://nodejs.org)
+- npm (incluido con Node.js)
+- La aplicación **Expo Go** en tu dispositivo móvil:
+  - [Android – Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
+  - [iOS – App Store](https://apps.apple.com/app/expo-go/id982107779)
+
+---
+
+## Instrucciones de Ejecucion
+
+### 1. Clonar el repositorio
+
+- Crear una carpeta en el escritorio.
+- Arrastra la carpeta a Visual Studio Code.
+- Ejecutar en la terminal CMD desde VS Code:
 
 ```bash
-npm run reset-project
+git clone https://github.com/siuldevelop/petcare-app.git
+```
+```bash
+cd petcare-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Instalar dependencias
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 3. Iniciar el servidor de desarrollo
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+Una vez iniciado, aparecerá un **código QR** en la terminal. (Scroll hacia arriba para encontrar el QR en la terminal).
 
-Join our community of developers creating universal apps.
+> **Importante:** el dispositivo móvil y el computador deben estar conectados a la **misma red WiFi**.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**Para ver la app en tu celular:**
+1. Abre la app **Expo Go** en tu dispositivo.
+2. Escanea el código QR que aparece en la terminal.
+3. La aplicación cargará automáticamente.
+
+---
+
+## Funcionalidades
+
+- **Mascotas:** Lista de mascotas con navegación al detalle individual.
+- **Detalle:** Muestra nombre, especie, raza, edad y peso. Incluye toggle de favorito.
+- **Registrar:** Formulario controlado con validación en tiempo real y botón de limpieza.
+- **Consejos:** Rotación automática de consejos cada 5 segundos con indicador de progreso.
