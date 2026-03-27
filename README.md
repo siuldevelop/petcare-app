@@ -1,6 +1,6 @@
 # PetCare – Gestor de Mascotas
 
-> ⚠️ **Nota:** El proyecto fue desarrollado con Expo en lugar de React Native CLI puro, debido a incompatibilidades técnicas con Android Studio en los equipos utilizados durante el desarrollo.
+> **Nota:** El proyecto fue desarrollado con Expo en lugar de React Native CLI puro, debido a incompatibilidades técnicas con Android Studio en los equipos utilizados durante el desarrollo.
 
 ---
 
@@ -29,9 +29,8 @@ PetCare es una aplicacion movil para la gestión de mascotas. Permite registrar 
 
 Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
-- [Node.js 18+](https://nodejs.org)
-- npm (incluido con Node.js)
-- La aplicación **Expo Go** en tu dispositivo móvil:
+- [Node.js](https://nodejs.org)
+- La aplicación **Expo Go** en tu dispositivo movil:
   - [Android – Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
   - [iOS – App Store](https://apps.apple.com/app/expo-go/id982107779)
 
@@ -39,11 +38,10 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
 ## Instrucciones de Ejecucion
 
-### 1. Clonar el repositorio
+### 1. Clonar el repositorio - desde CMD
 
-- Crear una carpeta en el escritorio.
-- Arrastra la carpeta a Visual Studio Code.
-- Ejecutar en la terminal CMD desde VS Code:
+- cd Desktop
+(O en la ruta que desee; para encontrar más facil la carpeta que se generará)
 
 ```bash
 git clone https://github.com/siuldevelop/petcare-app.git
@@ -78,6 +76,6 @@ Una vez iniciado, aparecerá un **código QR** en la terminal. (Scroll hacia arr
 ## Funcionalidades
 
 - **Mascotas:** Lista de mascotas con navegación al detalle individual.
-- **Detalle:** Muestra nombre, especie, raza, edad y peso. Incluye toggle de favorito.
+- **Detalle:** Muestra nombre, especie, raza, edad y peso. 'Incluye el toggle de favorito'.
 - **Registrar:** Formulario controlado con validación en tiempo real y botón de limpieza.
 - **Consejos:** Rotación automática de consejos cada 5 segundos con indicador de progreso.
