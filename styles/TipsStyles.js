@@ -1,121 +1,157 @@
-// styles/TipsStyles.js
-// Styles for TipsScreen
-
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
-    backgroundColor: '#F0F4FF',
+    backgroundColor: '#ECFDF5', // Verde muy suave
   },
+
   header: {
-    backgroundColor: '#4A6FA5',
-    paddingTop: 20,
-    paddingBottom: 24,
-    paddingHorizontal: 20,
-    borderBottomLeftRadius: 24,
-    borderBottomRightRadius: 24,
+    paddingTop: 45,
+    paddingBottom: 20,
+    paddingHorizontal: 24,
+    alignItems: 'center',
   },
+
   headerTitle: {
-    fontSize: 24,
+    fontSize: 26,
     fontWeight: '800',
-    color: '#FFFFFF',
-    marginBottom: 4,
+    color: '#1F2937',
+    letterSpacing: 1,
   },
+
   headerSubtitle: {
-    fontSize: 14,
-    color: '#C8D8F0',
+    fontSize: 13,
+    color: '#10B981', // Verde
+    marginTop: 6,
+    fontWeight: '600',
   },
+
   scrollContent: {
-    padding: 20,
+    padding: 22,
     paddingBottom: 40,
   },
+
   tipCard: {
     backgroundColor: '#FFFFFF',
-    borderRadius: 20,
-    padding: 24,
-    marginBottom: 16,
-    shadowColor: '#4A6FA5',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.12,
-    shadowRadius: 12,
-    elevation: 4,
-    minHeight: 200,
+    borderRadius: 24,
+    padding: 26,
+    marginBottom: 18,
+    minHeight: 220,
     justifyContent: 'space-between',
+
+    shadowColor: '#000',
+    shadowOpacity: 0.12,
+    shadowRadius: 18,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 8,
   },
+
   tipHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 16,
+    marginBottom: 18,
   },
+
   tipEmoji: {
     fontSize: 40,
-    marginRight: 12,
+    marginRight: 14,
   },
+
   tipMeta: {
     flex: 1,
   },
+
   tipCategory: {
-    fontSize: 11,
+    fontSize: 12,
     fontWeight: '700',
-    color: '#4A6FA5',
-    textTransform: 'uppercase',
-    letterSpacing: 1,
-    marginBottom: 2,
+    marginBottom: 3,
   },
+
+  /* COLORES POR TIPO DE TIP */
+
+  categoryHealth: {
+    color: '#10B981', // Verde
+  },
+
+  categoryFood: {
+    color: '#F59E0B', // Amarillo
+  },
+
+  categoryCare: {
+    color: '#3B82F6', // Azul
+  },
+
   tipTitle: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: '700',
-    color: '#1A2B4A',
+    color: '#1F2937',
   },
+
   tipDescription: {
     fontSize: 15,
-    color: '#5A6A7A',
+    color: '#374151',
     lineHeight: 22,
     marginBottom: 20,
   },
+
   indicatorRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
+
   indicatorText: {
-    fontSize: 13,
-    color: '#8A9AB0',
-    fontWeight: '600',
+    fontSize: 12,
+    color: '#6B7280',
   },
+
   dotsRow: {
     flexDirection: 'row',
-    gap: 6,
+    gap: 8,
   },
+
   dot: {
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: '#D0D8E8',
+    backgroundColor: '#D1D5DB',
   },
+
   dotActive: {
-    backgroundColor: '#4A6FA5',
+    backgroundColor: '#10B981',
     width: 20,
   },
+
   nextButton: {
-    backgroundColor: '#4A6FA5',
-    borderRadius: 14,
+    backgroundColor: '#10B981',
+    borderRadius: 18,
     paddingVertical: 14,
     alignItems: 'center',
-    marginTop: 4,
+    marginTop: 20,
+
+    shadowColor: '#10B981',
+    shadowOpacity: 0.35,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 6,
   },
+
   nextButtonText: {
     color: '#FFFFFF',
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: '700',
   },
+
   autoLabel: {
     textAlign: 'center',
-    fontSize: 12,
-    color: '#8A9AB0',
-    marginTop: 10,
+    fontSize: 11,
+    color: '#6B7280',
+    marginTop: 12,
+    fontStyle: 'italic',
   },
+
 });
 
 export default styles;
