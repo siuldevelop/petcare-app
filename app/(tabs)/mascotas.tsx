@@ -12,6 +12,13 @@ interface Pet {
   weight: number
 }
 
+const getEmoji = (species: string) => {
+  if (species === 'Perro') return '🐶'
+  if (species === 'Gato') return '🐱'
+  if (species === 'Loro') return '🦜'
+  return '🐾'
+}
+
 const initialPets: Pet[] = [
   { id: '1', name: 'Luna', species: 'Perro', breed: 'Labrador', age: 3, weight: 25 },
   { id: '2', name: 'Michi', species: 'Gato', breed: 'Persa', age: 2, weight: 4 },
@@ -35,17 +42,19 @@ export default function Mascotas() {
           <TouchableOpacity
             style={styles.card}
             onPress={() => router.push({
-            pathname: '/pet-detail',
-            params: {
-              id: item.id,
-              name: item.name,
-              species: item.species,
-              breed: item.breed,
-              age: String(item.age),
-              weight: String(item.weight),
+              pathname: '/pet-detail',
+              params: {
+                id: item.id,
+                name: item.name,
+                species: item.species,
+                breed: item.breed,
+                age: String(item.age),
+                weight: String(item.weight),
+                emoji: getEmoji(item.species),
               }
-          })}
+            })}
           >
+            <Text style={styles.emoji}>{getEmoji(item.species)}</Text>
             <View>
               <Text style={styles.name}>{item.name}</Text>
               <Text style={styles.species}>{item.species}</Text>
