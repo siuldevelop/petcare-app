@@ -1,136 +1,162 @@
-// styles/RegisterPetStyles.js
-// Styles for RegisterPetScreen
- 
 import { StyleSheet } from 'react-native';
- 
+
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
-    backgroundColor: '#F0F4FF',
+    backgroundColor: '#ECFDF5', // verde muy suave
   },
+
   header: {
-    backgroundColor: '#4A6FA5',
-    paddingTop: 20,
-    paddingBottom: 24,
-    paddingHorizontal: 20,
-    borderBottomLeftRadius: 24,
-    borderBottomRightRadius: 24,
+    paddingTop: 45,
+    paddingBottom: 20,
+    paddingHorizontal: 24,
+    alignItems: 'center',
+    backgroundColor: '#D1FAE5', // verde claro
   },
+
   headerTitle: {
-    fontSize: 24,
+    fontSize: 26,
     fontWeight: '800',
-    color: '#FFFFFF',
-    marginBottom: 4,
+    color: '#065F46',
+    letterSpacing: 1,
   },
+
   headerSubtitle: {
     fontSize: 14,
-    color: '#C8D8F0',
+    color: '#10B981', // verde principal
+    marginTop: 6,
+    fontWeight: '600',
   },
+
   scrollContent: {
     padding: 20,
     paddingBottom: 40,
   },
+
   formCard: {
     backgroundColor: '#FFFFFF',
-    borderRadius: 20,
-    padding: 20,
-    shadowColor: '#4A6FA5',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.12,
-    shadowRadius: 12,
-    elevation: 4,
-    marginBottom: 16,
+    padding: 24,
+    borderRadius: 24,
+
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 15,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 8,
   },
+
   fieldLabel: {
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: '700',
-    color: '#4A6FA5',
-    textTransform: 'uppercase',
-    letterSpacing: 0.8,
+    color: '#065F46',
     marginBottom: 6,
-    marginTop: 12,
+    marginTop: 16,
   },
+
   input: {
-    backgroundColor: '#F5F8FF',
+    backgroundColor: '#ECFDF5', // verde muy suave
     borderRadius: 12,
     paddingHorizontal: 16,
-    paddingVertical: 12,
-    fontSize: 15,
-    color: '#1A2B4A',
-    borderWidth: 1.5,
-    borderColor: '#E0E8F5',
+    paddingVertical: 14,
+    fontSize: 16,
+    color: '#1F2937',
+
+    borderWidth: 1,
+    borderColor: '#A7F3D0',
   },
+
   inputFocused: {
-    borderColor: '#4A6FA5',
+    borderColor: '#10B981',
     backgroundColor: '#FFFFFF',
   },
+
   inputError: {
-    borderColor: '#E05A5A',
+    borderColor: '#EF4444',
   },
+
   errorText: {
-    fontSize: 12,
-    color: '#E05A5A',
+    fontSize: 11,
+    color: '#EF4444',
     marginTop: 4,
-    marginLeft: 4,
   },
+
   validationRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 16,
+    marginTop: 14,
     padding: 12,
-    backgroundColor: '#F5F8FF',
-    borderRadius: 12,
+    backgroundColor: '#D1FAE5',
+    borderRadius: 10,
   },
+
   validationDot: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
+    width: 8,
+    height: 8,
+    borderRadius: 4,
     marginRight: 8,
   },
+
   validationDotComplete: {
-    backgroundColor: '#4CAF50',
+    backgroundColor: '#10B981',
   },
+
   validationDotIncomplete: {
-    backgroundColor: '#D0D8E8',
+    backgroundColor: '#A7F3D0',
   },
+
   validationText: {
     fontSize: 13,
-    color: '#5A6A7A',
+    color: '#374151',
   },
+
   buttonsRow: {
     flexDirection: 'row',
     gap: 12,
-    marginTop: 8,
+    marginTop: 28,
   },
+
   registerButton: {
-    flex: 1,
-    backgroundColor: '#4A6FA5',
-    borderRadius: 14,
-    paddingVertical: 15,
+    flex: 2,
+    backgroundColor: '#10B981',
+    paddingVertical: 16,
+    borderRadius: 16,
     alignItems: 'center',
+
+    shadowColor: '#10B981',
+    shadowOpacity: 0.35,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 5 },
+    elevation: 6,
   },
+
   registerButtonDisabled: {
-    backgroundColor: '#B0C0D8',
+    backgroundColor: '#A7F3D0',
   },
+
   registerButtonText: {
     color: '#FFFFFF',
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: '700',
   },
+
   clearButton: {
     flex: 1,
     backgroundColor: '#FFFFFF',
-    borderRadius: 14,
-    paddingVertical: 15,
+    borderRadius: 16,
+    paddingVertical: 16,
     alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#4A6FA5',
+
+    borderWidth: 1,
+    borderColor: '#A7F3D0',
   },
+
   clearButtonText: {
-    color: '#4A6FA5',
-    fontSize: 16,
-    fontWeight: '700',
+    color: '#10B981',
+    fontSize: 14,
+    fontWeight: '600',
   },
+
 });
- 
+
 export default styles;
