@@ -1,5 +1,3 @@
-# PetCare – Gestor de Mascotas
-
 > **Nota:** El proyecto fue desarrollado con Expo en lugar de React Native CLI puro, debido a incompatibilidades técnicas con Android Studio en los equipos utilizados durante el desarrollo.
 
 ---
@@ -11,7 +9,7 @@
 
 ---
 
-## Descripcion del Proyecto
+# PetCare – Gestor de Mascotas
 
 PetCare es una aplicacion movil para la gestión de mascotas. Permite registrar nuevas mascotas mediante un formulario de multiples campos, visualizar el listado de mascotas registradas, consultar el detalle de cada una y acceder a una pantalla de consejos de cuidado.
 
